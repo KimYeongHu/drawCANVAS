@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Canvas</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="../css/main.css" rel="styleSheet">
+    
+  </head>
+
+  <body>
+    <center>
+    <h1 style="font-family: 나눔고딕';" >그려봐요</h1>
+    </center>
+    <div class="canvas_grup">
+    <!-- <div class=dock-bar-vertical>
+      
+      
+    </div> -->
+    <button id="saveButton" 
+      >저장</button>
+    <canvas class="canvas" width="600" height="400">
+    </canvas>
+  </div>
+    
+    <div class="dock-bar">
+    <div class="toolBox">
+      # <input type="text" class="colorCode" maxlength="6" type-data="color" placeholder="??????"></input>
+   
+    <button class="tool-btn" color-data="black" type-data="color"></button>
+    <button class="tool-btn" color-data="rgb(255, 138, 138)" type-data="color"></button>
+    <button class="tool-btn" color-data="rgb(131, 255, 131)" type-data="color"></button>
+    <button class="tool-btn" color-data="rgb(119, 119, 255)" type-data="color"></button>
+    <button class="tool-btn"color-data="black" type-data="image"> <img src="images/ori.png" id="imageIcon" color-data="black" type-data="image"></button>
+
+    
+    
+    
+    <input type="range" class="brushSize" type-data="color" value="10" min="5" max="100">
+    <span id="rangeValue"></span>
+    &nbsp;
+   <span style="color: rgb(172, 176, 181); font-weight: bolder;" >|</span>
+    &nbsp;
+    <button class="tool-btn" color-data="none" type-data="e-brush" style="background: rgb(255, 255, 255); font-weight: bolder; color:#c5c5c5">E</button>
+    
+    <input type="range" class="e-brushSize" type-data="e-brush" value="10" min="10" max="100" >
+    <span id="rangeValue2"></span>
+    
+ 
+    &nbsp;
+    <button class="tool-btn" color-data="black" type-data="color" id="canvasReset" style="background: rgb(255, 255, 255); font-weight: bolder; color:#2243ff">R</button>
+    <span style="color: rgb(172, 176, 181); font-weight: bolder;" >|</span>
+    
+   <button class="tool-btn" id="prev"color-data="black" type-data="color">↩</button>
+   <button class="tool-btn" id="nextv"color-data="black" type-data="color">↪</button>
+
+    </div>  
+    </div>
+
+    <div class="saveImages"></div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
